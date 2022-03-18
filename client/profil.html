@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./profil/style.css">
+    <title>Profil</title>
+</head>
+<header>
+    <div class="logo-drap-group">
+        <a href="./accueil.html"><img id="logo" src="./accueil/images/logo.png" alt="logo"></a>
+        <div id="group">
+            <div id="privateClub">
+                <p>Club privilèges</p>
+            </div>
+            <a href="./connexion.html"><button id="connexion">Se connecter</button></a>
+        </div>
+        <!-- <a href="./connexion.html"><button id="connexion">Se connecter</button></a> -->
+    </div>
+</header>
+
+<body>
+    <section>
+        <div class="container-1">
+            <h4>Mon compte</h4>
+        </div>
+    </section>
+    <section>
+        <div class="container-2">
+            <div class="container-2-1">
+                <ul>
+                    <h4>
+                        <li>Mes informations</li>
+                    </h4>
+                    <h4>
+                        <li>Mes commandes</li>
+                    </h4>
+                    <h4>
+                        <li>Mes réclamations</li>
+                    </h4>
+                    <h4>
+                        <li>Parrainage</li>
+                    </h4>
+                </ul>
+            </div>
+            <div class="container-2-2">
+                <div class="container-infos">
+                    <h3>Mes informations</h3>
+                    <div class="form-co">
+                        <div class="identif-N">
+                            <label for="id">Nom:</label>
+                            <input type="text" id="identifiant" name="last_name" required>
+                        </div>
+                        <div class="identif-P">
+                            <label for="id">Prénom:</label>
+                            <input type="text" id="identifiant" name="first_name" required>
+                        </div>
+                    </div>
+                    <div class="E-mail">
+                        <label for="id">E-mail:</label>
+                        <input type="text" id="identifiant" name="email" required>
+                    </div>
+                    <div class="container-MP-change">
+                        <h3>Changement de mot de passe</h3>
+                        <div class="modif-MP">
+                            <div class="actual-MP">
+                                <label for="id">Mot de passe actuel:</label>
+                                <input type="text" id="identifiant" name="id" required>
+                            </div>
+                            <div class="New-MP">
+                                <label for="id">Nouveau mot de passe:</label>
+                                <input type="text" id="identifiant" name="id" required>
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" id="btn-co">Appliquer</button>
+                </div>
+                <div class="Historique">
+                    <h3>Historique</h3>
+                    <li class="Historique-tab-1">
+                        <span>Fontainebleau, Le faste des Rois. 25/08/2021 au 01/09/2021</span>
+                    </li>
+                    <li class="Historique-tab-2">
+                        <span>Chamalières. 14/10/2021 au 21/10/2021</span>
+                    </li>
+                    <li class="Historique-tab-3">
+                        <span>Dagda, le château. 05/02/2022</span>
+                    </li>
+                </div>
+                <div class="container-reclam">
+                    <h3>Réclamations</h3>
+                    <form action="https://formspree.io/f/xwkyqrwd" method="POST">
+                        <label>
+                            Votre email:
+                            <input type="email" name="email">
+                        </label>
+                        <label>
+                            Votre message:
+                            <textarea name="message"></textarea>
+                        </label>
+                        <button type="submit" id="btn-co">Envoyer</button>
+                    </form>
+                </div>
+            </div>
+            <div class="container-parrainage">
+                <h3>Parrainage</h3>
+                <form action="https://formspree.io/f/xeqnzrpr" method="POST">
+                    <label>
+                        email de votre filleul:
+                        <input type="email" name="email">
+                    </label>
+                    <label>
+                        message (facultatif):
+                        <textarea name="message"></textarea>
+                    </label>
+                    <button type="submit" id="btn-co">Envoyer</button>
+                </form>
+            </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <script src="./profil/script.js"></script>
+</body>
+<footer>
+    <div class="p-logof-group">
+        <a href="./equipe.html">
+            <p class="equip">Qui sommes-nous ?</p>
+        </a>
+        <img id="logof" src="./profil/images/logof.png" alt="logof">
+        <p class="copy">&copy; Copyright</p>
+    </div>
+</footer>
+
+</html>

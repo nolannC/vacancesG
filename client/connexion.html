@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connexion</title>
+    <link rel="stylesheet" href="./connexion/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-drap-group">
+            <a href="./accueil.html"><img id="logo" src="./connexion/images/logo.png" alt="logo"></a>
+            <div id="group">
+                <div id="privateClub">
+                    <p>Club privilèges</p>
+                </div>
+                <a href="./connexion.html"><button id="connexion">Se connecter</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <h1>Connexion</h1>
+        <div class="form-co">
+            <form>
+                <div class="identif">
+                    <label for="id">Entrez votre identifiant : </label>
+                    <input type="text" id="identifiant" name="id" required>
+                </div>
+
+                <div class="psw">
+                    <label for="psw">Entrez votre mot de passe : </label>
+                    <input type="password" id="psw" name="psw" required>
+                </div>
+
+                <button type="submit" id="btn-co">Se connecter</button>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="p-logof-group">
+            <a href="./equipe.html">
+                <p class="equip">Qui sommes-nous ?</p>
+            </a>
+            <img id="logof" src="./equipe/images/logof.png" alt="logof">
+            <p class="copy">&copy; Copyright</p>
+        </div>
+    </footer>
+    <script src="./connexion/script.js"></script>
+</body>
+
+</html>

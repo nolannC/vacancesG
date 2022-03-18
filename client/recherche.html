@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recherche</title>
+  <link rel="stylesheet" href="./recherche/style.css">
+</head>
+
+<body>
+  <header>
+    <div class="logo-drap-group">
+      <a href="./accueil.html"><img id="logo" src="./recherche/images/logo.png" alt="logo"></a>
+      <div id="group">
+        <div id="privateClub">
+          <p>Club privilèges</p>
+        </div>
+        <a href="./connexion.html"><button id="connexion">Se connecter</button></a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+    <div class="search">
+      <label for="lieu">Où allez-vous ?</label>
+      <input type="text" id="identifiant" name="where" required>
+
+      <label for="depart">Départ</label>
+      <input type="date" id="identifiant" name="dep" required>
+
+      <label for="arrivee">Arrivée</label>
+      <input type="date" id="identifiant" name="arr" required>
+
+      <label for="chambres">Chambres</label>
+      <input type="number" id="identifiant" name="chambre" min=1 required>
+
+      <button id="btn" type="submit">Rechercher</button>
+    </div>
+
+    <div class="result">
+      <div class="filter">
+        <h2>Prix</h2>
+        <div class="priceall">
+          <label for="pricemin">Prix minimum</label>
+          <input type="number" id="pricemi" name="price" min=0 required>
+
+          <label for="pricemax">Prix maximum</label>
+          <input type="number" id="pricema" name="price" min=0 required>
+        </div>
+
+        <h2>Type</h2>
+        <div class="filtertype">
+          <label class="container">Manoir
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Villa
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Atypique
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Maison
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Chalet
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Appartement
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2>Équipements</h2>
+        <div class="filtercol">
+          <label class="container">Piscine
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Jacuzzi
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Jardin
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Tennis
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Golf
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Spa
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Bateau
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Centre équestre
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Équipements de sports d'hiver
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Équipements de plongée
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Équipements de plongée
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Piste de Bobsleigh
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Patinoire
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+
+        <h2>Catégories</h2>
+        <div class="filtercat">
+          <label class="container">Ville
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Montagne
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Campagne
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+          <label class="container">Bord de mer
+            <input type="checkbox">
+            <span class="checkmark"></span>
+          </label>
+        </div>
+      </div>
+
+      <ul>
+      </ul>
+
+
+    </div>
+  </main>
+  <footer>
+    <div class="p-logof-group">
+      <a href="./equipe.html">
+        <p class="equip">Qui sommes-nous ?</p>
+      </a>
+      <img id="logof" src="./recherche/images/logof.png" alt="logof">
+      <p class="copy">&copy; Copyright</p>
+    </div>
+  </footer>
+  <script src="./recherche/script.js"></script>
+</body>
+
+</html>

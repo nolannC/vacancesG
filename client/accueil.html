@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accueil</title>
+    <link rel="stylesheet" href="./accueil/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo-drap-group">
+            <a href="#"><img id="logo" src="./accueil/images/logo.png" alt="logo"></a>
+            <div id="group">
+                <div id="privateClub">
+                    <p>Club privilèges</p>
+                </div>
+                <a href="./connexion.html"><button id="connexion">Se connecter</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+
+        <img class="mySlides" src="./accueil/images/campagne.jpg">
+        <img class="mySlides" src="./accueil/images/mer.jpg">
+        <img class="mySlides" src="./accueil/images/montagne.jpg">
+        <img class="mySlides" src="./accueil/images/ville.jpg">
+
+        <div id="catchPhrase">
+            <p>Location de demeures d'exception</p>
+        </div>
+
+        <div class="search">
+            <form>
+                <label for="lieu">Où allez-vous ?</label>
+                <input type="text" id="identifiant" name="where" required>
+
+                <label for="depart">Départ</label>
+                <input type="date" id="identifiant" name="dep" required>
+
+                <label for="arrivee">Arrivée</label>
+                <input type="date" id="identifiant" name="arr" required>
+
+                <label for="chambres">Chambres</label>
+                <input type="number" id="identifiant" name="chambre" min=0 required>
+
+                <button id="btn" type="submit">Rechercher</button>
+            </form>
+        </div>
+        <h2>Voyagez en France</h2>
+        <p class="p1">Pourquoi pas ici ?</p>
+
+        <div class="container">
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/paris.webp" alt="paris">
+                <div class="descv">Paris</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/marseille.webp" alt="marseille">
+                <div class="descv">Marseille</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/bordeaux.webp" alt="bordeaux">
+                <div class="descv">Bordeaux</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/lille.webp" alt="lille">
+                <div class="descv">Lille</div>
+            </div>
+        </div>
+
+        <h2>Laissez-vous tenter par nos coups de coeur</h2>
+        <p class="p1">Nos locations les mieux notées </p>
+
+        <div class="container">
+            <div class="gallery">
+                <img id="gal" src=".//accueil/images/5.jpg" alt="paris">
+                <div class="desc1">La Galibe</div>
+                <div class="desc">Terre de Chouans !</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/10.jpg" alt="marseille">
+                <div class="desc1">Les Cimes</div>
+                <div class="desc">Une vue rêvée sur les sommets, un spa de luxe caché dans ses murs, des balades
+                    équestres en montagne. Un lieu parfait pour se détendre.</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/15.jpg" alt="bordeaux">
+                <div class="desc1">Maison des Rives</div>
+                <div class="desc">Au coeur du périgord noir, pour des vacances gastronomiques et sportives ! Idéal pour
+                    les familles !</div>
+            </div>
+            <div class="gallery">
+                <img id="gal" src="./accueil/images/9.jpg" alt="lille">
+                <div class="desc1">Le Pic</div>
+                <div class="desc">Qui n’a jamais vu le cirque de Gavarnie n’a pas vécu !</div>
+            </div>
+        </div>
+
+    </main>
+    <footer>
+        <div class="p-logof-group">
+            <a href="./equipe.html">
+                <p class="equip">Qui sommes-nous ?</p>
+            </a>
+            <img id="logof" src="./accueil/images/logof.png" alt="logof">
+            <p class="copy">&copy; Copyright</p>
+        </div>
+    </footer>
+    <script src="./accueil/script.js"></script>
+</body>
+
+</html>

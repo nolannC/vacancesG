@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produits</title>
+    <link rel="stylesheet" href="./produits/produits.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+    <!-- <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script> -->
+
+</head>
+
+<body>
+    <header>
+        <div class="logo-drap-group">
+            <a href="./accueil.html"><img id="logo" src="./produits/images/logo.png" alt="logo"></a>
+            <div id="group">
+                <div id="privateClub">
+                    <p>Club privilèges</p>
+                </div>
+                <a href="./connexion.html"><button id="connexion">Se connecter</button></a>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div id=houseName>
+            <h1>Belle maison sur la côte</h1>
+        </div>
+        <div id="products">
+
+            <div id="productsMedias">
+                <img src="./produits/images/product1.jpg">
+
+                <!-- <div id="mapDiv" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+                    <div id="map">
+                    </div>
+                </div> -->
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d86085.39560751643!2d-3.136451113395489!3d47.603410983708535!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48106d2042da6177%3A0x40ca5cd36e2c7f0!2s56340%20Carnac!5e0!3m2!1sfr!2sfr!4v1647341500899!5m2!1sfr!2sfr"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+            <div id="productsText">
+
+                <p id="location"><img class="icones" src="./produits/images/loc.png"> Carnac, Bretagne, France</p>
+                <p id="description">Une villa pour vous sentir riches... ou juste pour passer un moment délicieux en
+                    famille !</p>
+                <div id="list">
+                    <ul id="superficie">
+                        <li><img class="icones" src="./produits/images/house.png"> Superficie : 400m²</li>
+                        <li><img class="icones" src="./produits/images/bedroom.png"> Chambres : 15</li>
+                        <li><img class="icones" src="./produits/images/bathroom.png">Salles de bains : 10</li>
+                    </ul>
+                </div>
+                <p id="prestations">Ménage et parking inclus dans toutes nos locations.</p>
+
+                <ul id="tags">
+                    <li>#piscine</li>
+                    <li>#jardin</li>
+                    <li>#bateau à moteur</li>
+                    <li>#jacuzzi</li>
+                    <li>#équipement de plongée</li>
+                </ul>
+
+                <div id="start">
+                    <label for="startDate">DATE DE DÉPART</label>
+                    <input type="fake" id="startDate" name="startDate" required>
+                    <!-- <input type="date" id="startDate" name="startDate" required> -->
+                </div>
+                <div id="end">
+                    <label for="endDate">DATE D'ARRIVÉE</label>
+                    <input type="fake" id="endDate" name="endDate" required>
+                </div>
+                <p id="duration">La durée de votre séjour doit se situer entre une semaine et un mois.</p>
+                <p id="price"></p>
+                <div id="chefCheckbox">
+                    <input type="checkbox" id="chef">
+                    <label for="chef">Réserver un chef cuisinier</label>
+                </div>
+                <div id="visitCheckbox">
+                    <input type="checkbox" id="visit">
+                    <label for="visit">Effectuer une visite préalable avec un associé</label>
+                </div>
+                <button type="submit" id="btn-resa">Réserver un séjour</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="p-logof-group">
+            <a href="./equipe.html">
+                <p class="equip">Qui sommes-nous ?</p>
+            </a>
+            <img id="logof" src="./produits/images/logof.png" alt="logof">
+            <p class="copy">&copy; Copyright</p>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+    <script src="./produits/script.js"></script>
+</body>
+
+</html>

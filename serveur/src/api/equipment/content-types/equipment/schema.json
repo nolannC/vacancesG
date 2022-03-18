@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "equipments",
+  "info": {
+    "singularName": "equipment",
+    "pluralName": "equipments",
+    "displayName": "Equipment"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "equipment": {
+      "type": "enumeration",
+      "enum": [
+        "Centre équestre",
+        "Golf",
+        "Jardin",
+        "Piscine",
+        "Tennis",
+        "Equipements de sports d'hiver",
+        "Parc de jeux",
+        "Spa",
+        "Bateau à moteur",
+        "Bateau à voile",
+        "Equipements de plongée",
+        "Piste de Bobsleigh",
+        "Patinoire",
+        "Jacuzzi"
+      ],
+      "required": true
+    },
+    "houses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::house.house",
+      "mappedBy": "equipment"
+    }
+  }
+}
